@@ -330,8 +330,8 @@ export default function Home() {
               : "bg-transparent"
           }`}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-3 group cursor-pointer">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-0">
+            <div className="flex items-center gap-3 group cursor-pointer justify-center md:justify-start">
               <Image
                 src="/complysphere-logo.png"
                 alt="ComplySphere"
@@ -371,12 +371,14 @@ export default function Home() {
               </Link>
             </div>
 
-            <button
-              onClick={handleContactUs}
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105"
-            >
-              Contact Us
-            </button>
+            <div className="flex justify-center md:justify-end w-full md:w-auto">
+              <button
+                onClick={handleContactUs}
+                className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 mt-2 md:mt-0"
+              >
+                Contact Us
+              </button>
+            </div>
           </div>
         </nav>
 
