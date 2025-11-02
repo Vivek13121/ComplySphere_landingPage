@@ -371,10 +371,10 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="flex justify-center md:justify-end w-full md:w-auto">
+            <div className="hidden md:flex justify-end w-full md:w-auto">
               <button
                 onClick={handleContactUs}
-                className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 mt-2 md:mt-0"
+                className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 md:mt-0"
               >
                 Contact Us
               </button>
